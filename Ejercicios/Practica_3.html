@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tercera practica (Formulario)</title>
+</head>
+
+<body>
+    <h1>Primer Formulario</h1>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="user_name"><br>
+            <p>Eres socio?</p>
+            <input type="radio" name="sociio" value="si" checked> Si, soy socio<br>
+            <input type="radio" name="sociio" value="no" checked> No soy socio<br>
+            <label for="email">Email</label>
+            <input type="email" name="email"><br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="user_psw"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="edad">Edad</label><br>
+            <select id="groups" name="groups"> Select
+                <optgroup label="Edad">
+                    <option>Mayor de 18</option>
+                    <option selected>Menor de 18</option>
+                </optgroup>
+            </select><br><br>
+            <label for="fecha">Selecciona la fecha y la hora de la reserva:</label><br>
+            <input type="date" name="fecha"><input type="time" name="time"><br><br>
+            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Comentarios"></textarea>
+        </fieldset><br> 
+
+        <input type="checkbox" name="condiciones" value="condiciones">Acepto las condiciones<br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
