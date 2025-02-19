@@ -1,6 +1,37 @@
 /*------------------header de la pagina-----------------------*/
 
+
 .img_logo {
-    width: 125px;    
-    height: auto;    
+    height: auto; 
+    width: 125px;     
 }
+
+.indice {
+    align-items: center;
+    background-color: rgb(216, 214, 214);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0px;
+
+}
+
+/*navegación de paginas dentro del header*/
+
+.barra_navegacion {
+    text-align: center;
+    background-color: rgb(212, 179, 243);
+    padding: 10px;
+    border-bottom: 2px solid rgb(157, 157, 157);
+}
+
+.barra_navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.barra_navegacion ul li {
+    display: inline-block;
+}
+
