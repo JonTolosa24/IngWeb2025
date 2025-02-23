@@ -24,7 +24,7 @@ body {
 /*navegación de paginas dentro del header*/
 
 .barra_navegacion {
-    background-color: rgb(238, 237, 237);
+    background-color: rgb(126, 38, 38);
     text-align: center;
     padding: 5px;
 }
@@ -37,16 +37,45 @@ body {
 
 .barra_navegacion ul li {
     display: inline-block;
-    margin: 0 15px;
     font-size: 18px;
     font-weight: 700;
-    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    margin: 0 25px;
 }
 
-.barra_navegacion ul li:hover {
-    font-size: 20px;
-    transform: scale(1.1);
-    color: #007bff;
-    cursor: pointer;
+.barra_navegacion ul li a{
+    color: #333;
+    text-decoration: none;
 }
+
+.barra_navegacion ul li a:hover {
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.buscador {
+    padding: 10px;
+    text-align: center;
+}
+
+.buscador fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buscador input[type="text"] {
+    width: 180px;
+    padding: 6px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px; 
+    outline: none;
+}
+
+.buscador:hover input[type="text"] {
+    border-color: #007bff; 
+}
+
+
+
 
