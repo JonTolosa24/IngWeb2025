@@ -24,7 +24,6 @@ body {
 /*navegación de paginas dentro del header*/
 
 .barra_navegacion {
-    background-color: rgb(126, 38, 38);
     text-align: center;
     padding: 5px;
 }
@@ -33,25 +32,37 @@ body {
     list-style: none;
     margin: 0;
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .barra_navegacion ul li {
     display: inline-block;
     font-size: 18px;
     font-weight: 700;
-    margin: 0 25px;
+    margin: 0 15px;
+    position: relative;
 }
 
-.barra_navegacion ul li a{
-    color: #333;
+.barra_navegacion ul li a {
+    color: #007bff;
     text-decoration: none;
+    padding: 5px;
 }
 
 .barra_navegacion ul li a:hover {
-    cursor: pointer;
-    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
 }
 
+.barra_navegacion ul li.seleccionado a {
+    color: #004fa3;
+}
+
+
+/*buscador de la pagina en el heaer*/
 .buscador {
     padding: 10px;
     text-align: center;
@@ -63,18 +74,49 @@ body {
     margin: 0;
 }
 
-.buscador input[type="text"] {
+.buscador input[type="text"] { /*agregar estilos a un input de tipo texto, en este caso el buscador*/
     width: 180px;
     padding: 6px;
     font-size: 14px;
     border: 2px solid #ccc;
     border-radius: 5px; 
     outline: none;
+    color: #007bff;
 }
 
 .buscador:hover input[type="text"] {
     border-color: #007bff; 
 }
+
+/*----------------------------MAIN------------------------*/
+
+/*lista lateral*/
+
+#contenido_lateral {
+    background-color: #f4f4f4;
+    padding: 15px;
+    width: 200px;
+}
+
+#lista_lateral {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista_lateral li {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px; /*borde redondeado*/
+    text-align: center;
+}
+
+#lista_lateral li:hover {
+    background-color: #007bff;
+    color: white;
+}
+
 
 
 
