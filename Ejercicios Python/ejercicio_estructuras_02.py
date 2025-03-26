@@ -8,6 +8,7 @@ suma = 0
 
 contador = num1
 while contador <= num2:
+    print(f"el contador va por el : {contador}")
     suma += contador
     contador += 1
 
