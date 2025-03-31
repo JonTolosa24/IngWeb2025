@@ -3,3 +3,6 @@ from django.http import HttpResponse
 
 def index(request):
  return HttpResponse("Hello, world!")
+
+def comprar(request):
+    return HttpResponse("He comprado!")
