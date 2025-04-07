@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Detalles del trabajador</h2>
+    {% if trabajador %}
+    <body>
+        <h1>Detalles de {{ trabajador.nombre }}</h1>
+        <ul>
+            <li><strong>Empresa:</strong> {{ trabajador.empresa.nombre }}</li>
+            <li><strong>Fecha de Nacimiento:</strong> {{ trabajador.fecha_nacim }}</li>
+            <li><strong>Antigüedad:</strong> {{ trabajador.antiguedad }} años</li>
+        </ul>
+        <a href="{% url 'trabajadores' %}">Volver a la lista</a> 
+        <!-- al ponerle en urls name="trabajadores, le puedo añadir un enlace para volver" -->
+    </body>
+    {% endif %} 
+</body>
+</html>
